@@ -8,13 +8,15 @@
 </head>
 <body>
     <style>
-        .header .p-3, .info {
-            background-color: orange;
-            border: 2px solid blue;
+        .orange {
+            color: rgb(255, 102, 0);
         }
-        .info .p-3 {
-            background-color: red;
-            border: 2px solid green;
+        .blue {
+            color: blue;
+        }
+        .info {
+            border: 2px solid orange;
+            border-bottom: 0px;
         }
         .items {
             border-bottom: 2px solid orange;
@@ -22,49 +24,64 @@
         .items .row {
             border-top: 2px solid orange;
         }
-        .items .row:nth-child(even) {
+        .items .row:nth-child(odd) {
             background-color: blue;
+            color: white;
+        }
+        .w-90 {
+            width: 90%
+        }
+        .header a {
+            font-size: 1.2rem;
+            color: black;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        body {
+            background-color: rgba(255, 228, 196, 0.397) !important;
         }
     </style>
-    <div class="container text-center header">
-        <div class="row g-4 py-2 justify-content-md-center">
-            <div class="col">
-                <div class="p-3"><a href="#">TODOS OS CAMINHOS</a></div>
+    <div class="topo pb-5">
+        <div class="container text-center header w-90 bg-orange">
+            <div class="row g-4 py-2 justify-content-md-center">
+                <div class="col">
+                    <div class="p-3"><a href="#">TODOS OS CAMINHOS</a></div>
+                </div>
+                <div class="col">
+                    <div class="p-3"><a href="#">APOIE-NOS</a></div>
+                </div>
+                <div class="col">
+                    <div class="p-3"><a href="#">YOUTUBE</a></div>
+                </div>
+                <div class="col">
+                    <div class="p-3"><a href="#">SOBRE</a></div>
+                </div>
             </div>
-            <div class="col">
-                <div class="p-3"><a href="#">APOIE-NOS</a></div>
+        </div>    
+        <div class="container-fluid info w-90">
+            <div class="row g-4 py-2 pt-4">
+                <div class="col-6">
+                    <h1 class="p-3"><span class="orange">Trilha</span> <span class="blue">de</span> <span class="orange">estudos</span></h1>
+                </div>
             </div>
-            <div class="col">
-                <div class="p-3"><a href="#">YOUTUBE</a></div>
+            <div class="row g-4 py-1">
+                <div class="col-9">
+                    <div class="p-3">Descrição<br>Descrição<br>Descrição</div>
+                </div>
             </div>
-            <div class="col">
-                <div class="p-3"><a href="#">SOBRE</a></div>
+            <div class="row g-4 py-1 justify-content-end text-end">
+                <div class="col-3">
+                    <div class="p-3">Irmãos Dev</div>
+                </div>
             </div>
-        </div>
-    </div>    
-    <div class="container info">
-        <div class="row g-4 py-2 pt-4">
-            <div class="col-6">
-                <h1 class="p-3">Trilha de estudos</h1>
-            </div>
-        </div>
-        <div class="row g-4 py-1">
-            <div class="col-9">
-                <div class="p-3">Descrição<br>Descrição<br>Descrição</div>
-            </div>
-        </div>
-        <div class="row g-4 py-1 justify-content-md-end text-end">
-            <div class="col-3">
-                <div class="p-3">Irmãos Dev</div>
-            </div>
-        </div>
-        <div class="row g-4 py-1">
-            <div class="col-4">
-                <div class="p-3">Redes Sociais</div>
+            <div class="row g-4 py-1">
+                <div class="col-4">
+                    <div class="p-3">Redes Sociais</div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid text-center my-4 items">
+    <div class="container-fluid text-center items">
         <div class="row py-4">
             <div class="col">
                 <div><img src="0.png" width="100" class="img-thumbnail" alt="O começo de tudo"><br>O começo de tudo</div>
