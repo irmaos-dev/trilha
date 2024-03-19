@@ -46,3 +46,11 @@
   }
 
   ul.a {list-style-type: square;}
+
+  .conteudo-letramaior {
+    line-height: 1;
+    text-align: justify;
+    font-size: 1.7rem;
+    color: white;
+    font-weight: bold;
+  }
