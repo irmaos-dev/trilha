@@ -55,6 +55,34 @@
     font-weight: bold;
   }
 
-  td.tdazul{
-    background-color: #288bc8;
+  td {
+    background-color: #288bc8 !important;
   }
+
+  #border-laranja{
+    border-color: #ff5b19 !important;
+  }
+
+  .letra-laranja{
+    color: #ff5b19;
+    font-size: 4rem;
+  }
+
+  .letra-azul{
+    color: #288bc8;
+    font-weight: bold;
+    margin-inline-start: 1.5rem;
+  }
+  
+  figcaption.capbranco{
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem ;
+  }
+
+  figcaption.capazul{
+    color:#288bc8 ;
+    font-weight: bold;
+    font-size: 1.6rem ;
+  }
+
