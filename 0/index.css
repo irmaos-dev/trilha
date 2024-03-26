@@ -63,6 +63,10 @@
     border-color: #ff5b19 !important;
   }
 
+  #border-azul{
+    border-color: #288bc8 !important;
+  }
+
   .letra-laranja{
     color: #ff5b19;
     font-size: 4rem;
@@ -86,3 +90,10 @@
     font-size: 1.6rem ;
   }
 
+  .letra-link{
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+  }
