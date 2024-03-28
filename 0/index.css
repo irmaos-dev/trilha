@@ -5,6 +5,7 @@
 .letra-preta{
     color: black;
     font-size: 6rem;
+    font-family: 'DM Sans';
 }
 
 @media only screen and (max-width: 992px) and (min-width: 600px) { .letra-preta{ font-size: 3.7rem;}}
@@ -19,6 +20,7 @@
     text-align: justify;
     font-size: 1.4rem;
     color: white;
+    font-family: 'DM Sans';
   }
 
   .conteudo-preto {
@@ -26,7 +28,8 @@
     text-align: center;
     font-size: 1.4rem;
     color: black;
-    font-weight: bold;    
+    font-weight: bold;
+    font-family: 'DM Sans';    
   }  
 
 .espacamentosm {
@@ -43,6 +46,7 @@
     font-size: 0.6rem;
     color: white;
     text-decoration: none;
+    font-family: 'DM Sans';
   }
 
   ul.a {list-style-type: square;}
@@ -53,6 +57,7 @@
     font-size: 1.7rem;
     color: white;
     font-weight: bold;
+    font-family: 'DM Sans';
   }
 
   td {
@@ -70,30 +75,41 @@
   .letra-laranja{
     color: #ff5b19;
     font-size: 4rem;
+    font-family: 'DM Sans';
   }
 
   .letra-azul{
     color: #288bc8;
     font-weight: bold;
     margin-inline-start: 1.5rem;
+    font-family: 'DM Sans';
   }
   
   figcaption.capbranco{
     color: white;
     font-weight: bold;
     font-size: 1.6rem ;
+    font-family: 'DM Sans';
   }
 
   figcaption.capazul{
     color:#288bc8 ;
     font-weight: bold;
     font-size: 1.6rem ;
+    font-family: 'DM Sans';
   }
+
 
   .letra-link{
     text-align: center;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
+    font-family: 'DM Sans';
     
   }
+
+  .aumentaimagemsm{
+    width: 15%;
+  }
+  @media only screen and (max-width: 600px) { .aumentaimagemsm{ width: 70%;}}
