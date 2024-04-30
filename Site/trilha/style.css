@@ -17,6 +17,15 @@
 @media only screen and (max-width: 992px) and (min-width: 600px) { .letra-preta{ font-size: 3.7rem;}}
 @media only screen and (max-width: 600px) { .letra-preta{ font-size: 2.2rem; font-weight: bold;}}
 
+.so-letra-preta{
+  color: black;
+}
+
+#letra-media{
+  font-size: 1.3rem;
+  font-family: 'DM Sans';
+}
+
 .azul{
     background-color: #288bc8;
 }
@@ -53,6 +62,10 @@
     color: white;
     text-decoration: none;
     font-family: 'DM Sans';
+  }
+
+  .navbar-icon-laranja{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2840, 139, 200, 100%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
 
   ul.a {list-style-type: square;}

@@ -9,44 +9,31 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
-  <style>
-    :root {
-        --bs-blue: #288bc8;
-        --bs-indigo: #7b4bc9;
-        --bs-orange: #ff5b19;
-        --bs-yellow: #ffc107;
-        --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }
-    .btn-warning {
-        background-color: var(--bs-orange);
-        border-color: var(--bs-blue);
-    }
-</style>
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-lg bg-body-light">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" id="border-laranja" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon navbar-icon-laranja"></span>
       </button> 
       <a class="navbar-brand" href="/Site/index.html">
         <img src="ImagensInicial/Logo-resumida.png" alt="Irmãos Dev" width="40" height="32">
       </a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03" style="font-family: 'DM Sans'">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-around">
           <li class="nav-item">
-            <a class="nav-link" href="index.html"><strong>TODOS OS CAMINHOS</strong></a>
+            <a class="nav-link so-letra-preta" href="index.html"><strong>TODOS OS CAMINHOS</strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><strong>APOIE-NOS</strong></a>
+            <a class="nav-link so-letra-preta" href="#"><strong>APOIE-NOS</strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.youtube.com/@IrmaosDev"><strong>YOUTUBE</strong></a>
+            <a class="nav-link so-letra-preta" href="https://www.youtube.com/@IrmaosDev"><strong>YOUTUBE</strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><strong>SOBRE</strong></a>
+            <a class="nav-link so-letra-preta" href="#"><strong>SOBRE</strong></a>
           </li>
         </ul>        
       </div>
@@ -54,23 +41,12 @@
   </nav>
 
   <div class="container border border-bottom-0" id="border-laranja">
-    <h1 class="letra-laranja mt-5 ms-4">Trilha <span style="color: #288bc8;">de</span> Estudos</h1>
-    <div class="row">
-      <div class="col-7">
-        <div class="row ms-3">
+    <h1 class="letra-laranja mt-5 mx-2 mb-4" style="text-align: center;">Trilha <span style="color: #288bc8;">de</span> Estudos</h1>
+    <div class="col mx-3 px-md-5 mx-md-5" id="letra-media">
           <p style="text-align: justify;">Bem vindo(a)! Esta trilha de estudos te fornece <strong>gratuitamente</strong> os recursos que te fará um(a) <strong>DEV</strong>.</p>
           <p style="text-align: justify;">Cada módulo conta com uma discussão sobre o assunto, uma meta de estudos em horas de recursos como apostilas, vídeos, artigos e tutoriais, projetos e desafios para fixação do conhecimento e uma sugestão de como aprofundar no assunto.</p>
-          <p>Este material foi elaborado com base em experiências pessoais e em pesquisas de mercado e está em constante evolução.</p>
-          <p><a href="">Assista este vídeo para mais informações.</a></p>
-        </div>
-        <div class="row">
-          <p class="d-flex align-items-end letra-azul">@irmaos_dev</p>
-        </div>
-      </div>
-      <div class="col"></div>
-      <div class="col-4">
-        <img src="Imagens/Logo.png" alt="Logo" class="d-flex mt-3" width=80%>
-      </div>
+          <p style="text-align: justify;">Este material foi elaborado com base em experiências pessoais e em pesquisas de mercado e está em constante evolução.</p>
+          <p style="text-align: justify;"><a href="">Assista este vídeo para mais informações.</a></p>
     </div>
     
     <a href="https://www.youtube.com/@IrmaosDev">
@@ -121,22 +97,25 @@
       <a href="https://www.tiktok.com/@irmaos.dev">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok text-dark" viewBox="0 0 16 16">
         <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-      </svg>
+      </svg></a>
     </div>
   </div>
 
   <div class="container-fluid azul mt-4 border-bottom border-5 d-flex justify-content-center" id="border-laranja">
-    <a href="0.html" class="textdecorationnone">
-      <figure class="figure d-flex flex-column align-items-center">
+
+      <div class="col-6">
+          <a href="0.html" class="textdecorationnone"><figure class="figure d-flex flex-column align-items-center">
         <img src="ImagensInicial/0.jpg" href="" alt="Primeiros Passos" class="figure-img img-fluid rounded-circle my-4"
-          width=15%>
+          width=30%>
         <figcaption class="figure-caption capbranco">Primeiros Passos</figcaption>
-      </figure>
-    </a>
+      </figure>  </a>
+    </div>
+  
   </div>
 
   <div class="container-fluid border-bottom border-5 d-flex justify-content-around align-items-center"
     id="border-laranja">
+    <div class="col-4">
     <figure class="figure d-flex flex-column align-items-center col-6">
         <a href="1.html" class="d-flex flex-column align-items-center textdecorationnone">
         <img src="ImagensInicial/1.jpg" href="" alt="HTML e CSS" class="figure-img img-fluid rounded-circle my-4"
@@ -144,6 +123,9 @@
         <figcaption class="figure-caption capazul">HTML e CSS</figcaption>
       </a>
     </figure>
+    </div>
+    <div class="col-4"></div>
+    <div class="col-4">
     <figure class="figure d-flex flex-column align-items-center col-6">
         <a href="2.html" class="d-flex flex-column align-items-center textdecorationnone">
         <img src="ImagensInicial/2.jpg" href="" alt="Lógica da Programação"
@@ -151,8 +133,59 @@
         <figcaption class="figure-caption capazul">Lógica da Programação</figcaption>
       </a>
     </figure>
+    </div>
 
   </div>
+
+</div>
+
+<div class="container-fluid border-bottom border-5 d-flex justify-content-around align-items-center"
+  id="border-laranja">
+ 
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+  <figure class="figure d-flex flex-column align-items-center col-6">
+      <a href="1.html" class="d-flex flex-column align-items-center textdecorationnone">
+      <img src="ImagensInicial/1.jpg" href="" alt="HTML e CSS" class="figure-img img-fluid rounded-circle my-4"
+        width=30%>
+      <figcaption class="figure-caption capazul">HTML e CSS</figcaption>
+    </a>
+  </figure>
+  </div>
+  <div class="col"></div>
+  <div class="col">
+  <figure class="figure d-flex flex-column align-items-center col-6">
+      <a href="2.html" class="d-flex flex-column align-items-center textdecorationnone">
+      <img src="ImagensInicial/2.jpg" href="" alt="Lógica da Programação"
+        class="figure-img img-fluid rounded-circle my-4" width=30%>
+      <figcaption class="figure-caption capazul">Lógica da Programação</figcaption>
+    </a>
+  </figure>
+  </div>
+
+</div>
+
+    
+        1 of 2
+      </div>
+      <div class="col">
+        2 of 2
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        1 of 3
+      </div>
+      <div class="col">
+        2 of 3
+      </div>
+      <div class="col">
+        3 of 3
+      </div>
+    </div>
+  </div>
+
 
   <div class="container-fluid azul border-bottom border-5 d-flex justify-content-around align-items-center"
     id="border-laranja">
