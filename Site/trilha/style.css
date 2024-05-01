@@ -2,138 +2,159 @@
   text-decoration: none;
 }
 
-
-.laranja{
-    background-color: #ff5b19;
+.laranja {
+  background-color: #ff5b19;
 }
 
-.letra-preta{
-    color: black;
-    font-size: 6rem;
-    font-family: 'DM Sans';
+.letra-preta {
+  color: black;
+  font-size: 6rem;
+  font-family: "DM Sans";
 }
 
-@media only screen and (max-width: 992px) and (min-width: 600px) { .letra-preta{ font-size: 3.7rem;}}
-@media only screen and (max-width: 600px) { .letra-preta{ font-size: 2rem; font-weight: bold;}}
+@media only screen and (max-width: 992px) and (min-width: 600px) {
+  .letra-preta {
+    font-size: 3.7rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .letra-preta {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
 
-.so-letra-preta{
+.so-letra-preta {
   color: black;
 }
 
-#letra-media{
+#letra-media {
   font-size: 1.3rem;
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
 }
 
-.azul{
-    background-color: #288bc8;
+.azul {
+  background-color: #288bc8;
 }
 
 .conteudo {
-    line-height: 1.3;
-    text-align: justify;
-    font-size: 1.4rem;
-    color: white;
-    font-family: 'DM Sans';
-  }
+  line-height: 1.3;
+  text-align: justify;
+  font-size: 1.4rem;
+  color: white;
+  font-family: "DM Sans";
+}
 
-  .conteudo-preto {
-    line-height: 1.3;
-    text-align: center;
-    font-size: 1.4rem;
-    color: black;
-    font-weight: bold;
-    font-family: 'DM Sans';    
-  }  
+.conteudo-preto {
+  line-height: 1.3;
+  text-align: center;
+  font-size: 1.4rem;
+  color: black;
+  font-weight: bold;
+  font-family: "DM Sans";
+}
 
 .espacamentosm {
-    line-height: 0.8;
-  }
+  line-height: 0.8;
+}
 
-.alinhacenter{
-    margin: 0;
+.alinhacenter {
+  margin: 0;
 }
 
 .navbar-text-white {
-    line-height: 1;
-    text-align: start;
-    font-size: 0.6rem;
-    color: white;
-    text-decoration: none;
-    font-family: 'DM Sans';
+  line-height: 1;
+  text-align: start;
+  font-size: 0.6rem;
+  color: white;
+  text-decoration: none;
+  font-family: "DM Sans";
+}
+
+.navbar-icon-laranja {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2840, 139, 200, 100%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+ul.a {
+  list-style-type: square;
+}
+
+.conteudo-letramaior {
+  line-height: 1;
+  text-align: justify;
+  font-size: 1.7rem;
+  color: white;
+  font-weight: bold;
+  font-family: "DM Sans";
+}
+
+td {
+  background-color: #288bc8 !important;
+}
+
+#border-laranja {
+  border-color: #ff5b19 !important;
+}
+
+#border-azul {
+  border-color: #288bc8 !important;
+}
+
+.letra-laranja {
+  color: #ff5b19;
+  font-size: 4rem;
+  font-family: "DM Sans";
+}
+@media only screen and (max-width: 600px) {
+  .letra-laranja {
+    font-size: 2.4rem;
   }
+}
 
-  .navbar-icon-laranja{
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2840, 139, 200, 100%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+.letra-azul {
+  color: #288bc8;
+  font-weight: bold;
+  margin-inline-start: 1.5rem;
+  font-family: "DM Sans";
+}
+
+figcaption.capbranco {
+  color: white;
+  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: "DM Sans";
+}
+@media only screen and (max-width: 600px) {
+  figcaption.capbranco {
+    font-size: 0.9rem;
   }
+}
 
-  ul.a {list-style-type: square;}
-
-  .conteudo-letramaior {
-    line-height: 1;
-    text-align: justify;
-    font-size: 1.7rem;
-    color: white;
-    font-weight: bold;
-    font-family: 'DM Sans';
+figcaption.capazul {
+  color: #288bc8;
+  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: "DM Sans";
+}
+@media only screen and (max-width: 600px) {
+  figcaption.capazul {
+    font-size: 0.9rem;
   }
+}
 
-  td {
-    background-color: #288bc8 !important;
+.letra-link {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "DM Sans";
+}
+
+.aumentaimagemsm {
+  width: 15%;
+}
+@media only screen and (max-width: 600px) {
+  .aumentaimagemsm {
+    width: 70%;
   }
-
-  #border-laranja{
-    border-color: #ff5b19 !important;
-  }
-
-  #border-azul{
-    border-color: #288bc8 !important;
-  }
-
-  .letra-laranja{
-    color: #ff5b19;
-    font-size: 4rem;
-    font-family: 'DM Sans';
-  }
-  @media only screen and (max-width: 600px) { .letra-laranja{ font-size: 2.4rem;}}
-
-  .letra-azul{
-    color: #288bc8;
-    font-weight: bold;
-    margin-inline-start: 1.5rem;
-    font-family: 'DM Sans';
-  }
-  
-  figcaption.capbranco{
-    color: white;
-    font-weight: bold;
-    font-size: 1.6rem ;
-    font-family: 'DM Sans';
-  }
-  @media only screen and (max-width: 600px) { figcaption.capbranco{ font-size: 0.9rem;}}
-
-  figcaption.capazul{
-    color:#288bc8 ;
-    font-weight: bold;
-    font-size: 1.6rem ;
-    font-family: 'DM Sans';
-  }
-  @media only screen and (max-width: 600px) { figcaption.capazul { font-size: 0.9rem;}}
-
-
-  .letra-link{
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-    font-family: 'DM Sans';
-    
-  }
-
-  .aumentaimagemsm{
-    width: 15%;
-  }
-  @media only screen and (max-width: 600px) { .aumentaimagemsm{ width: 70%;}}
-
-
-  
+}
