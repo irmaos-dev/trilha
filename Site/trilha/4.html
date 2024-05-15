@@ -119,32 +119,32 @@ Atividade ou projeto? -->
         <div class="col">
           <div class="container azul mt-5 rounded-4">
             <ul class="conteudo py-3 pe-2 ps-4.5">
-              <li class="pb-4">
+              <li>
                 <a class="conteudo" href="#introducao">Introdução</a>
               </li>
-              <li class="pb-4">
+              <li>
                 <a class="conteudo" href="#profissional"
                   >Relevância profissional</a
                 >
               </li>
-              <li class="pb-4">
+              <li>
                 <a class="conteudo" href="#conhecimentos"
                   >Conhecimentos envolvidos</a
                 >
               </li>
-              <li class="pb-4">
+              <li>
                 <a class="conteudo" href="#pre-requisitos">Pré-requisitos</a>
               </li>
-              <li class="pb-4">
+              <li>
                 <a class="conteudo" href="#tempo">Meta de tempo de estudos</a>
               </li>
-              <li class="pb-4">
+              <li>
+                <a class="conteudo" href="#projetos">Projetos</a>
+              </li>
+              <li>
                 <a class="conteudo" href="#estudo"
                   >Sugestão de recursos para estudo</a
                 >
-              </li>
-              <li class="pb-4">
-                <a class="conteudo" href="#atividade">Atividade</a>
               </li>
               <li>
                 <a class="conteudo" href="#aprofundamento">Aprofundamento</a>
@@ -169,11 +169,20 @@ Atividade ou projeto? -->
           <div class="container azul mt-5 rounded-4">
             <p class="conteudo py-3 px-2">
               Este projeto objetiva criar um backend (uma API web) que interaja
-              com o frontend do API Fake criado no módulo #3.<br /><br />
+              com o
+              <a class="conteudo" href="3.html#projeto3"
+                >frontend (projeto 3) criado no módulo #3.</a
+              >
+            </p>
+            <p class="conteudo px-2">
               Você pode, contudo, realizar este projeto antes do projeto #3.
-              Para tal você utilizará o frontend de exemplo que forneci.<br /><br />
+              Para tal você utilizará o frontend de exemplo que forneci.
+            </p>
+            <p class="conteudo py-3 px-2">
               Pode-se dizer que todos produtos de software possuem um banco de
-              dados. Contudo nem todos os dados podem serem expostos.
+              dados. Contudo nem todos os dados podem ser expostos. O backend
+              atua como interface entre o frontend e o banco de dados,
+              garantindo que apenas os dados relevantes cheguem aos usuários.
             </p>
           </div>
         </div>
@@ -192,25 +201,11 @@ Atividade ou projeto? -->
       <div class="row">
         <div class="col">
           <div class="container azul mt-5 rounded-4">
-            <p class="conteudo py-3 px-2">Sem relevância.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row" id="conhecimentos">
-        <div class="col-auto">
-          <div class="container laranja mt-5 rounded-4">
-            <h1 class="display-6 text-light py-2 px-2">
-              <strong>Conhecimentos envolvidos</strong>
-            </h1>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <div class="container azul mt-5 rounded-4">
-            <p class="conteudo py-3 px-2">MySQL e SQL.</p>
+            <p class="conteudo py-3 px-2">
+              Aplicações backend são extremamente comuns, pois permitem que as
+              empresas donas do software recebam e processem os dados de seus
+              usuários sem que exponha suas regras de negócios e seus dados.
+            </p>
           </div>
         </div>
       </div>
@@ -229,8 +224,8 @@ Atividade ou projeto? -->
         <div class="col">
           <div class="container azul mt-5 rounded-4">
             <p class="conteudo py-3 px-2">
-              Nenhum.<br /><br />
-              *Este projeto é pré-requisito dos projetos #5 e #6.
+              O projeto #2 é pré-requisito deste projeto.<br /><br />
+              *Este projeto é pré-requisito do projeto #5.
             </p>
           </div>
         </div>
@@ -249,7 +244,148 @@ Atividade ou projeto? -->
       <div class="row">
         <div class="col">
           <div class="container azul mt-5 rounded-4">
-            <p class="conteudo py-3 px-2">Menos de 50 anos</p>
+            <ul class="a conteudo py-3 pe-2 ps-4.5">
+              <li>Invista cerca de 20 horas estudando os conteúdos</li>
+              <li>
+                Realize o projeto 1 (Interação com CrudCrud usando Thunder
+                Client) em cerca de 2 horas.
+              </li>
+              <li>
+                Realize o projeto 2 (Interação com CrudCrud usando Javascript)
+                em cerca de 4 horas.
+              </li>
+              <li>
+                Realize o projeto 3 (Página web interagindo com CrudCrud) em até
+                70 horas.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="projetos">
+        <div class="col-auto">
+          <div class="container laranja mt-5 rounded-4">
+            <h1 class="display-6 text-light py-2 px-2">
+              <strong>Projetos</strong>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="container azul mt-5 rounded-4">
+            <ol class="conteudo py-3 pe-2 ps-4.5">
+              <li id="projeto1">Manipulador de arquivos</li>
+              <p class="conteudo">
+                Neste projeto, você deverá exibir, criar, alterar, remover e
+                mover arquivos do seu sistema.<br />
+                Além disso, seu código deverá ser capaz de receber argumentos
+                pela linha de comando.
+              </p>
+              <p class="conteudo">
+                Crie um código a ser executado pelo terminal que aceite os
+                seguintes argumentos:
+              </p>
+              <ul class="a conteudo">
+                <li class="py-1">
+                  node meu_cli.js exibir meu_arquivo_teste.txt<br />
+                  O conteúdo do arquivo deve aparecer integralmente na tela.
+                </li>
+                <li class="py-1">
+                  node meu_cli.js criar meu_arquivo_teste.txt "Meu texto a ser
+                  gravado no arquivo"<br />
+                  Deve criar um arquivo com o nome passado no segundo argumento
+                  (meu_arquivo_teste.txt) e contendo o texto que foi passado
+                  como terceiro argumento ("Meu texto a ser gravado no
+                  arquivo").
+                </li>
+                <li class="py-1">
+                  node meu_cli.js alterar meu_arquivo_teste.txt "Mudei o texto
+                  aqui"<br />
+                  Deve alterar o arquivo de nome passado no segundo argumento
+                  (meu_arquivo_teste.txt) para que seu conteúdo seja o texto que
+                  foi passado como terceiro argumento ("Mudei o texto aqui").
+                </li>
+                <li class="py-1">
+                  node meu_cli.js remover meu_arquivo_teste.txt<br />
+                  Deve deletar o arquivo de nome passado no segundo argumento
+                  (meu_arquivo_teste.txt).
+                </li>
+                <li class="py-1">
+                  node meu_cli.js mover meu_arquivo_teste.txt
+                  C:/pasta_destino/meu_arquivo_teste.txt<br />
+                  Deve mover o arquivo de nome passado no segundo argumento
+                  (meu_arquivo_teste.txt) para o caminho passado no terceiro
+                  argumento (C:/pasta_destino/meu_arquivo_teste.txt).
+                </li>
+                <li class="py-1">
+                  node meu_cli.js OU node meu_cli.js help<br />
+                  Deve exibir a lista de comandos possíveis e uma descrição de
+                  como usá-los.
+                </li>
+              </ul>
+              <p class="conteudo">
+                Você deve validar todos os parâmetros, de forma que ao passar
+                parâmetros inválidos, seu programa deverá exibir uma mensagem de
+                erro e exibir a lista de comandos e suas instruções de uso.
+              </p>
+              <p class="conteudo">
+                Uma outra ideia é fazer o programa renomear todos os arquivos de
+                uma pasta conforme um dado critério.<br />
+                Ou ainda, agrupar os arquivos em diferentes pastas conforme sua
+                extensão.
+              </p>
+              <li id="projeto2">
+                Backend para um
+                <a class="conteudo" href="3.html#projeto3">frontend</a>
+              </li>
+              <p class="conteudo">
+                Este projeto objetiva criar um backend que interaja com o
+                <a class="conteudo" href="3.html#projeto3"
+                  >frontend (projeto 3) criado no módulo #3</a
+                >, substituindo o
+                <a class="conteudo" href="https://crudcrud.com">CrudCrud</a>.
+              </p>
+              <p class="conteudo">
+                Crie um servidor web utilizando Express.JS, com um banco de
+                dados MySQL ou MongoDB (sugiro que faça os dois, um de cada vez)
+                contendo as seguintes rotas:
+              </p>
+              <ul class="a conteudo">
+                <li class="py-2">
+                  GET /pessoas<br />
+                  Deve retornar um JSON contendo todas as pessoas cadastradas.
+                </li>
+                <li class="py-2">
+                  POST /pessoas<br />
+                  Deve receber um JSON contendo os dados de uma pessoa a ser
+                  cadastrada.
+                </li>
+                <li class="py-2">
+                  PUT /pessoas/{ID}<br />
+                  Deve receber um JSON contendo os dados de uma pessoa e alterar
+                  os dados da pessoa com o ID passado na rota (exemplo:
+                  /pessoas/123 altera a pessoa ID 123)
+                </li>
+                <li class="py-2">
+                  DELETE /pessoas/{ID}<br />
+                  A pessoa do ID passado deve ser removida do banco de dados.
+                </li>
+              </ul>
+              <p class="conteudo">
+                Para utilizar a sua API, coloque o endereço IP do seu backend no
+                frontend, em vez do endereço do
+                <a class="conteudo" href="https://crudcrud.com">CrudCrud</a
+                >.<br />
+                Você pode utilizar tanto o próprio frontend quanto um API Client
+                (como o Thunder Client) para desenvolver e testar sua aplicação
+                backend.<br />
+                Após finalizá-la, garanta que o frontend esteja funcionando sem
+                problemas com o backend criado.
+              </p>
+            </ol>
           </div>
         </div>
       </div>
@@ -267,111 +403,44 @@ Atividade ou projeto? -->
       <div class="row">
         <div class="col">
           <div class="container azul mt-5 rounded-4">
-            <!-- <ul class="conteudo py-3 pe-2 ps-4.5"></ul> -->
-            <p class="conteudo py-3 px-2">Se vire.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row" id="atividade">
-        <div class="col-auto">
-          <div class="container laranja mt-5 rounded-4">
-            <h1 class="display-6 text-light py-2 px-2">
-              <strong>Atividade</strong>
-            </h1>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <div class="container azul mt-5 rounded-4">
-            <p class="conteudo py-3 px-2">
-              Este projeto consiste em resolver uma série de problemas usando
-              Javascript dentro da plataforma
-              <a class="conteudo" href="https://www.beecrowd.com.br">Beecrowd</a
-              >.<br /><br />
-              Lista de problemas propostos:
-            </p>
-            <table class="table table-borderless">
-              <tbody>
-                <tr>
-                  <td class="tdazul">
-                    <a
-                      class="conteudo"
-                      href="https://www.beecrowd.com.br/judge/pt/problems/view/2603"
-                      >2603</a
-                    >
-                  </td>
-                  <td class="tdazul">
-                    <a
-                      class="conteudo"
-                      href="https://www.beecrowd.com.br/judge/pt/problems/view/2605"
-                      >2605</a
-                    >
-                  </td>
-                  <td class="tdazul">
-                    <a
-                      class="conteudo"
-                      href="https://www.beecrowd.com.br/judge/pt/problems/view/2608"
-                      >2608</a
-                    >
-                  </td>
-                  <td class="tdazul">
-                    <a
-                      class="conteudo"
-                      href="https://www.beecrowd.com.br/judge/pt/problems/view/2616"
-                      >2616</a
-                    >
-                  </td>
-                  <td class="tdazul">
-                    <a
-                      class="conteudo"
-                      href="https://www.beecrowd.com.br/judge/pt/problems/view/2988"
-                      >2988</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tdazul">
-                    <a
-                      class="conteudo"
-                      href="https://www.beecrowd.com.br/judge/pt/problems/view/2604"
-                      >2604</a
-                    >
-                  </td>
-                  <td class="tdazul">
-                    <a
-                      class="conteudo"
-                      href="https://www.beecrowd.com.br/judge/pt/problems/view/2606"
-                      >2606</a
-                    >
-                  </td>
-                  <td class="tdazul">
-                    <a
-                      class="conteudo"
-                      href="https://www.beecrowd.com.br/judge/pt/problems/view/2609"
-                      >2609</a
-                    >
-                  </td>
-                  <td class="tdazul">
-                    <a
-                      class="conteudo"
-                      href="https://www.beecrowd.com.br/judge/pt/problems/view/2624"
-                      >2624</a
-                    >
-                  </td>
-                  <td class="tdazul">
-                    <a
-                      class="conteudo"
-                      href="https://www.beecrowd.com.br/judge/pt/problems/view/2990"
-                      >2990</a
-                    >
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br />
+            <ul class="conteudo py-3 pe-2 ps-4.5">
+              <li>
+                <a
+                  class="conteudo"
+                  href="https://github.com/ericdouglas/traduz-ai/blob/master/nodejs/001-guia-para-iniciantes-absolutos-em-nodejs.md"
+                  >Guia Para Absolutos Iniciantes em Node.js</a
+                >;
+              </li>
+              <li>
+                <a
+                  class="conteudo"
+                  href="https://github.com/ericdouglas/traduz-ai/blob/master/nodejs/002-simples-guia-nodejs-jade-express-mongodb.md"
+                  >Simples Guia Passo-a-Passo Para Desenvolvedores Front-End
+                  Iniciarem Com Node.js, Express, Jade e MongoDB</a
+                >;
+              </li>
+              <li>
+                <a
+                  class="conteudo"
+                  href="https://www.youtube.com/playlist?list=PLHlHvK2lnJndvvycjBqQAbgEDqXxKLoqn"
+                  >Curso: Criando APIs com NodeJs grátis</a
+                >;
+              </li>
+              <li>
+                <a
+                  class="conteudo"
+                  href="https://blog.reativa.dev/apostila-nodejs-completa/"
+                  >Apostila de NodeJS 100% Gratuita</a
+                >;
+              </li>
+              <li>
+                <a
+                  class="conteudo"
+                  href="https://www.youtube.com/playlist?list=PLnex8IkmReXwCyR-cGkyy8tCVAW7fGZow"
+                  >Curso de Node JS</a
+                >.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -390,46 +459,47 @@ Atividade ou projeto? -->
         <div class="col">
           <div class="container azul mt-5 rounded-4">
             <ul class="conteudo py-3 pe-2 ps-4.5">
-              <li>Testar outras aplicações de API Client;</li>
-              <br />
               <li>
-                Melhorar o projeto:
+                Adicionar novas funcionalidades ao primeiro projeto, como:
                 <ul>
-                  <li>poder enviar o endereço da API pelo queryParams;</li>
-                  <li>ordenar;</li>
-                  <li>buscar pessoa por nome/email;</li>
                   <li>
-                    adicionar data de nascimento e exibir total de dias de vida
-                    e quantos dias falta para aniversário;
+                    Agrupar os arquivos de um diretório em pastas distintas,
+                    conforme a extensão dos arquivos.
                   </li>
-                  <li>integrar com um serviço de previsão do tempo;</li>
-                  <li>cadastro de telefones/endereços para cada pessoa;</li>
-                  <li>internacionalização;</li>
-                  <li>relacionar pessoas entre si (cadastro de amigos);</li>
-                  <li>relatório número de amigos por pessoa;</li>
+                  <li>
+                    Agrupar os arquivos em pastas distintas, conforme o tamanho
+                    dos arquivos. (exemplo, arquivos com menos de 1gb são
+                    movidos para a pasta 1gb-, enquanto arquivos maiores são
+                    movidos para a pasta 1gb+)
+                  </li>
                 </ul>
               </li>
-              <br />
               <li>
-                Criar uma nova aplicação usando uma API pública:
-                <ul>
-                  <li>
-                    <a
-                      class="conteudo"
-                      href="https://www.youtube.com/watch?v=N6OjsvMK8EE"
-                      >Conheça 6 APIs públicas ESSENCIAIS para utilizar nos seus
-                      projetos FRONT-END | Desenvolvimento Web</a
-                    >;
-                  </li>
-                  <li>
-                    <a
-                      class="conteudo"
-                      href="https://github.com/public-apis/public-apis"
-                      >Public APIs</a
-                    >: lista coletiva no GitHub com APIs grátis para software e
-                    desenvolvimento web.
-                  </li>
-                </ul>
+                Melhorar o segundo projeto, adicionando novas funcionalidades
+                como essas descritas no
+                <a class="conteudo" href="3.html#aprofundamento"
+                  >segundo item de aprofundamento do frontend.</a
+                >
+              </li>
+              <li>
+                Refaça o
+                <a class="conteudo" href="#projeto2">projeto 2</a> utilizando
+                outra linguagem como C#, Java, PHP, Python, Ruby ou Go.<br />
+                Uma boa opção é utilizar um framework web, como: ASP.NET Core,
+                Spring Boot, Laravel, Django, Ruby on Rails ou Gin.
+              </li>
+              <li>
+                Faça um sistema de web scrapping.<br />
+                Web scrapping é uma forma de extrair dados de websites de forma
+                automatizada.<br />
+                Para isso, você utiliza o Node.JS com uma biblioteca como o
+                <a class="conteudo" href="https://pptr.dev/">Puppeteer.</a> Com
+                ele, você é capaz de controlar um navegador de forma
+                programática.<br />
+                Crie um código que navegue por um site, extraia dados das
+                páginas e armazene-os em um banco de dados ou em um arquivo.<br />
+                Uma ideia é pegar os dados de produtos em promoção em um
+                e-commerce.
               </li>
             </ul>
           </div>

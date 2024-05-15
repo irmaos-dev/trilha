@@ -158,3 +158,16 @@ figcaption.capazul {
     width: 70%;
   }
 }
+
+ul > li {
+  margin: 1.5em 0;
+  line-height: 1.15;
+}
+
+li[id] {
+  font-weight: bolder;
+}
+
+li[id] > * {
+  font-weight: initial;
+}
