@@ -1,0 +1,60 @@
+<!--
+    Como que eu faço pra poder limitar o width de um elemento não esticar a div pai?
+    Lembra daquele chat que eu tava fazendo? Quando eu coloco uma tabela, por exemplo,
+    ele estica aquele chat e aí coloca uma barra de rolagem horizontal
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        font-size: 12px;
+      }
+      table {
+        width: 150%;
+      }
+      .filho {
+        background-color: blue;
+        width: 100%;
+        overflow: auto;
+      }
+    </style>
+    <div class="filho">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Aspiração</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cyber Howl</td>
+            <td>
+              Cyber HowlCyber HowlCyber HowlCyber HowlCyber HowlCyber Howl
+            </td>
+          </tr>
+          <tr>
+            <td>Sobre as Ondas</td>
+            <td>
+              Sobre as OndasSobre as OndasSobre as OndasSobre as OndasSobre as
+              Ondas
+            </td>
+          </tr>
+          <tr>
+            <td>Jose Icaro</td>
+            <td>
+              Jose IcaroJose IcaroJose IcaroJose IcaroJose IcaroJose Icaro
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

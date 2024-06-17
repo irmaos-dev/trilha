@@ -109,7 +109,208 @@
         </div>
       </div>
 
-      <!-- 
+
+Dani:
+
+colocar as funcionalidades descritas no último módulo
+fazer com accordion e com checkbox
+
+
+Crie um sistema com algumas das funcionalidades descritas:
+
+- CRUD de ao menos 5 entidades (e que suas lógicas se relacionem)
+    Criar CRUDs geralmente é uma tarefa repetitiva. E fazer muitos deles em um só projeto te trará pouco conhecimento diverso. É possível construir uma aplicação interessante que possua tão poucas entidades quanto apenas cinco e que por consequência, você demorará menos tempo para executá-la.
+
+- banco de dados SQL
+    Seu projeto deve ter um banco de dados. Se você não consegue trabalhar com um banco de dados, provavelmente não será visto nem como um "Júnior". Praticamente todos os projetos profissionais possuem algum tipo de banco de dados.
+
+- autenticação
+    Ter a funcionalidade de Cadastro e Login é praticamente indispensável para qualquer aplicação. Seu sistema deve garantir que pessoas que não possuem cadastro não façam alterações em quaisquers dados que o sistema possua.
+
+- interface agradável (CSS puro, Bootstrap ou Tailwind)
+    Faça uma interface bonita, limpa, amigável e responsiva. As pessoas compram o livro pela capa. Frequentemente pensarão que se a interface é boa, certamente o código também é. Frameworks CSS como Bootstrap, TailwindCSS, Materialize ou Bulma são boas o suficiente.
+
+- responsividade
+    A maior parte do tráfego da internet é feita por dispositivos móveis. Tenha certeza de que sua interface está bem montada para smartphones.
+
+- relatórios
+    Demonstra a sua capacidade técnica de exibir dados de maneira clara e concisa. Permita que o usuário possa filtrar o relatório de acordo com alguns dos dados ou por período de tempo.
+
+- variáveis de ambiente
+    Muitas vezes rodamos o nosso sistema em ambientes diferentes. Ter um arquivo de configuração de variáveis é muito útil para qualquer um poder alterar alguma configuração (como as credenciais de um banco de dados ou de uma API) sem ter que alterar o código diretamente.
+
+- containerização
+    É comum que as aplicações que construímos possuam vários passos de instalação. Além disso, ela depende de linguagens e bibliotecas em versões específicas para funcionar corretamente. Muitas das vezes, possuímos instalados uma versão diferente da correta e instalar mais de uma versão nem sempre é simples. Containerizar sua aplicação utilizando Docker, por exemplo, te auxilia em automatizar o passo a passo de configuração/instalação e também garante que as versões corretas sejam utilizadas, sem a necessidade de instalar ou alterar a versão de cada uma das dependências do código.
+    Além disso, você dificilmente achará uma empresa que não usa esse tipo de ferramenta e esse é o tipo de tecnologia do dia-a-dia das empresas que ninguém quer perder tempo te ensinando.
+
+- README detalhado
+    A primeira coisa que alguém interessado no seu código vai olhar é o README do repositório. Esse README deve conter informações sobre o projeto como o objetivo, as tecnologias usadas e como executá-lo.
+
+- demo online
+    Se você está demonstrando o seu projeto a um recrutador, certamente quer facilitar a vida dele. Faça o seu sistema estar disponível em algum endereço na internet e inclua o link no seu README.
+
+------
+
+- arquitetura MVC
+    Organize seu código usando os princípios de design e arquitetura. Empresas possuem padrões de estilo e estrutura baseado no conhecimento acumulado da indústria. Assim, garantem que não importa que alguns desenvolvedores saiam ou entrem, eles possuem uma base de código consistente e fácil de expandir, debugar ou consultar. Se seu código não possui uma estrutura clara e organizada, você irá passar a impressão de que é mais "Júnior" do que realmente é. Felizmente, o oposto é verdade, se seu projeto segue um bom padrão de design e arquitetura, ele passará a impressão de que você é mais "Senior" do que realmente é.
+    Grande parte dos projetos modernos usam o MVC e mesmo que a empresa em particular use uma arquitetura diferente, eles irão estar confiantes que você poderá se adaptar.
+
+- níveis de acesso
+    Crie um sistema que apenas pessoas autorizadas tenham acesso a ele. E mais, faça que algumas funções sejam acessíveis apenas por um grupo, como Administradores
+
+- admin controls e preferencias do usuário
+    Seu software deve possuir uma página em que os usuários possam personalizar o comportamento da aplicação. Caso seja uma configuração do Admin, deve refletir a todos os usuários. Configurações do usuário, devem ser aplicadas apenas aquele único usuário.
+
+- notificações integradas e por emails
+    Tenha um sistema de notificações dentro do seu sistema, semelhante a notificações de redes sociais. Mas também envie emails de notificação. Possibilita o usuário personalizar as notificações que deseja receber.
+
+- shared multi-tenancy
+    Multi-tenancy é a capacidade do seu sistema de separar os dados de forma de que cada usuário possa ler e alterar apenas os dados referentes à sua própria conta. Isso pode acontecer não apenas no nível de usuário, mas também em um nível acima, como empresas ou projetos, onde os usuários poderão ver informações apenas da empresa que ele está associado.
+    A multi-tenancy ser "shared" significa que os dados estão todos em um mesmo banco de dados. Uma outra forma de atingir esse isolamento de dados é colocá-los em bancos de dados separados. Isso é chamado de "isolated multi-tenancy". É possível ainda fazer de forma híbrida, tendo alguns dados compartilhado no mesmo banco de dados, enquanto outros estão em outro banco de dados.
+
+- upload de arquivos na cloud
+    O envio de arquivo para um sistema é muito comum e pode ser a parte central do modelo de negócios. É possível fazer essa funcionalidade utilizando o seu próprio servidor. Contudo, é comum usar um serviço apropriado para a tarefa, já que fazer upload no mesmo servidor da aplicação pode comprometer seu desempenho. Podemos usar serviço de hospedagem de arquivos como o AWS S3 para fazer o upload diretamente a ele.
+
+- testes automatizados
+    Crie testes unitários em ambos front-end e back-end. De preferência, também testes de integração. Mesmo que os testes automatizados possam parecer um obstáculo ou um peso na progressão do projeto, eles aumentam a qualidade geral do sistema e você irá ganhar pontos pelo profissionalismo. Melhor ainda: a empresa contratante estará tranquila de que você entende a importância dos testes e como escrevê-los.
+
+- integração com uma API "simples"
+    Faça seu sistema se comunicar com alguma API externa, mesmo que simples como uma previsão do tempo. Você pode encontrar uma lista de APIs públicas em: https://github.com/public-apis/public-apis
+
+- landing page
+    Uma landing page é o primeiro contato de um cliente em potencial com o seu sistema. Ela deve ser estruturada para convencer o usuário a adquirir ou assinar o seu produto.
+
+- versão gratuita e versão paga
+    Isso demonstra que você pode integrar com um sistema de pagamentos. E é bem comum ter uma integração de pagamentos em softwares corporativos. Além disso, isso pode te servir como um grande argumento no momento da entrevista. Todo mundo gosta de dinheiro.
+
+- período de testes
+    Além da integração de pagamentos, ter um período de testes demonstra sua competência em executar scripts agendados (crontab por exemplo).
+
+- deployment automatico
+    Colocar um software em produção envolve muitas etapas que podem falhar se realizadas de forma errada. Portanto, ter esse processo automatizado é fundamental em qualquer produto por evitar que ele esteja fora do ar e por diminuir o tempo que este processo demora.
+
+- cache
+    Caches melhoram a experiência do usuário e economizam recursos. Caches podem existir em locais diferentes: no client, no server ou ainda ser distribuído (CDN)
+
+- importar e exportar CSV (opcional)
+    É comum que clientes desejem consultar ou manipular seus dados utilizando um software de planilha.
+
+- gerar PDF no client ou no server (opcional)
+    É possível gerar PDFs em ambos front ou back e esta é uma funcionalidade comum e desejada pelos usuários.
+
+- Single Page Application (opcional)
+    Também conhecido como SPA, é um site que não realiza uma atualização completa do seu conteúdo. Após carregado pela primeira vez, o conteúdo é alterado dinamicamente sem a necessidade de mudar de página. Apesar de ser possível atingir esse objetivo utilizando apenas Javascript, em geral usamos frameworks para tal, como React, Angular, etc. SPAs proporcionam uma melhor experiência ao usuário e são a escolha comum na maior parte do sistemas corporativos.
+
+- Server Side Rendering (opcional)
+    É comum que o Javascript faça o trabalho de renderizar os elementos da interface. Porém esse trabalho também pode ser feito pelo backend que retornará ao frontend o que deverá ser exibido na tela, diminuindo o processamento dentro do navegador. Essa abordagem trás benefícios como uma performance maior e facilita o trabalho dos serviços de busca como o Google.
+
+- comunicação de 2 vias (opcional)
+    O jeito mais comum de desenvolver um sistema web é fazendo requisições HTTP. Porém este modelo é unidirecional, ou seja, o client deve enviar um pedido para que o servidor responda com algum dado, e o servidor não pode enviar dados sem que o client faça essa requisição.
+    Para possibilitar aplicações como chats, notificações e outros, deve usar um protocolo que permita a comunicação de duas vias. A forma mais utilizada é chamada Websockets.
+    Faça uma aplicação que utilize desse protocolo. Uma outra ideia é atualizar os dados de uma tabela em qualquer client aberto assim que um registro for adicionado, removido ou alterado.
+
+- Docs da API (opcional)
+    Crie uma documentação dos endpoints da sua API. Essa documentação deve conter as informações necessárias para um desenvolver utilizar a API para criar seu próprio client.
+    Exemplo: https://realworld-docs.netlify.app/docs/specs/backend-specs/endpoints
+
+- score máximo de acessibilidade (opcional)
+    Acessibilidade refere-se à capacidade do conteúdo de um website ser consumido por pessoas com deficiência.
+    Utilize ferramentas como o accessibilitychecker.org que avaliam o nível de acessibilidade da sua aplicação.
+
+- Progressive Web Application (opcional)
+    PWA te permite adicionar funcionalidades como instalação, acesso a arquivos do computador, suporte para funcionar offline e outros.
+
+- timezones (opcional)
+    Possibilite que o seu site seja utilizado de forma eficaz por qualquer pessoa independentemente de seu fuso horário.
+
+- internacionalização (opcional)
+    Possibilite que o seu site seja utilizado de forma eficaz por qualquer pessoa independentemente de seu idioma.
+
+- fuzzy search (opcional)
+    Tenha uma funcionalidade de busca inteligente: ela deve encontrar os recursos mesmo que o usuário não digite corretamente o termo a ser encontrado. Também deve retornar recursos relacionados.
+    Exemplo: Elasticsearch
+
+- integração com uma API com autenticação por OAuth2 como o Google Calendar ou Social Authentication (opcional)
+    Com o OAuth2, sites podem compartilhar os dados de seus clientes com aplicações de terceiros mediante à aprovação o usuário.
+    Um exemplo comum dessa tecnologia é o login pelo Google (e outros), que tornam desnecessário a implementação de uma página de cadastro e de login.
+
+- API pública de autenticação "simples" (opcional)
+    Diferentemente do OAuth2, uma autenticação simples não depende a aprovação de um usuário. Ao receber as credenciais, você é capaz de utilizar todas as funcionalidades da API.
+
+- criar uma API pública com OAuth2 (opcional)
+    De forma inversa à sugerida anteriormente, crie um serviço de OAuth2, em vez de apenas consumir uma API. Você deve fazer uma API que permita acessar os dados de seus usuários que concordaram em compartilhar esses dados com o serviço de terceiros.
+
+- isolated/hybrid multi-tenancy (opcional)
+    Enquanto no shared multi-tenancy os dados dos usuários estão todos agrupados em um mesmo banco de dados, num modelo isolated os dados estão separados em bancos de dados distintos. Podem inclusive estar em países diferentes. O modelo híbrido mescla ambas abordagens, assim é possível, por exemplo, ter um banco de dados para cada região que contém os dados dos clientes desta região.
+
+- ambiente de staging (opcional)
+    É um ambiente pareado com o ambiente de produção que é usado para testar novas funcionalidades ou correções de bugs em condições similares ao que o usuário tem.
+
+- teste de carga (opcional)
+    Simule o recebimento de uma grande quantidade de acessos simultâneos na sua aplicação para determinar a capacidade de seus servidores ou para identificar gargalos.
+
+- Message Broker (opcional)
+    Útil principalmente para arquiteturas de microsserviços, esta ferramenta te auxilia a integrar as diferentes partes do seu sistema, mesmo que tenham sido construídas em linguagens e tecnologias diferentes, garante a entrega de mensagens entre os componentes e dá suporte à comunicação assíncrona entre eles.
+
+- autoscaling horizontal/diagonal (opcional)
+    Suponha que o sistema recebeu um inesperado número de acessos simultâneos e seu servidor não pode atender à todas requisições. O processo de autoscaling faz com que novos servidores sejam iniciados para ajudar a atender a demanda extra.
+    O autoscaling pode ser horizontal (adiciona máquinas iguais à máquina original) ou diagonal (adiciona máquinas com maior poder de processamento do que a original).
+    É importante, também, finalizar as máquinas extras assim que a demanda diminuir.
+
+- geograficamente distribuído (opcional)
+    Sua aplicação pode receber acessos de diferentes partes do mundo. Quanto mais longe o usuário estiver do servidor, maior o tempo necessário para receber uma resposta do servidor, diminuindo, portanto, a performance do sistema para aquele usuário.
+    Seu sistema deve possuir servidores em locais geográficos diferentes para possibilidade um tempo de resposta baixo não importa o lugar que o usuário esteja.
+
+- drag n drop (opcional)
+    Faça uma funcionalidade que seja drag and drop, como: arrastar arquivos do computador para fazer upload no site ou mudar a ordem dos elementos dentro de uma tabela.
+
+- offline support (opcional, incomum)
+    Faça uma aplicação que possa ser acessada sem internet e que as alterações feitas sejam efetuadas assim que a conexão for reestabelecida.
+
+- Wordpress, Magento
+    Nem tudo precisa ser construído do zero, caso precise colocar no ar aplicações como blogs ou lojas virtuais, utilize sistema prontos como esses que ainda lhe permitem customizá-los utilizando linguagens de programação.
+
+- plugins de Wordpress, Magento, Jira, Odoo, Zoho, Salesforce
+    Softwares como esses possuem grande demanda de personalização. Você pode atuar como freelance construindo extensões e plugins nesse tipo de sistema.
+
+- load balancer
+    Suponha que você possua vários servidores para atender as requisições dos usuários. Você necessita de um software (Load Balancer) para encaminhar cada requisição feita a um servidor disponível, de forma a balancear a quantidade de recursos usados nos servidores.
+    Também pode ser usado quando a máquina do servidor possuir múltiplos núcleos, assim a aplicação pode ser rodada mais de uma vez ao mesmo tempo na mesma máquina, usufruindo de todos os núcleos do seu processador.
+
+- rate limit e throttling
+    Throttling garante que o servidor processe uma quantidade pré-definida de requisições em um período de tempo e recuse novas requisições.
+    Rate limit previne que um mesmo usuário faça requisições excessivas à sua API, respondendo apenas a uma quantidade X de requisições em um intervalo de tempo Y.
+
+- blacklist
+    Ao identificar que um usuário está tentando utilizar seu software de maneira indevida, sua aplicação deve recusar novas requisições do mesmo.
+
+- Filtros, Ordenação, Paginação
+    Nas páginas de exibição dos registros cadastrados, possibilite que o usuário filtre os registros conforme um critério; ordene os registros em ordem alfabética crescendo ou decrescente de acordo com a coluna escolhida; paginação é a funcionalidade que define quantos registros serão exibidos em uma única página (alguns sites possibilitam que o próprio usuário defina o número de registros por página)
+
+- Observabilidade
+    É uma propriedade do software que indica a possibilidade de extrair dados e informações para identificar a raiz de problemas e gargalos e métricas de negócio e uso.
+
+- Task Scheduling
+
+
+- Job Queues
+
+- Legacy code
+
+- React Native
+
+- two-factor authentication
+
+- feature e release flag, canary
+
+- dashboard de performance e uso
+
+- web scrapping
+
+
+
+      
+<!-- 
       <div class="row">
         <div class="col-auto">
           <div class="container laranja mt-5 rounded-4">

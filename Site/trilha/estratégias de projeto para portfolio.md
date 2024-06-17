@@ -10,25 +10,24 @@ João quer adquirir as habilidades de desenvolvimento o mais rápido possível
   - backend em um framework opinativo, como: .NET, Laravel, Django, Spring Boot
   - melhorar a responsividade
   - testes automatizados (se o projeto não tiver, começar do zero)
+  - Login social
+  - Filtros, Ordenação, Paginação
   - relatórios
   - variáveis de ambiente e docker (se já tiver, refaça do zero)
   - README detalhado e demo online
   - níveis de acesso e preferencias do administrador
-  - websockets
+  - websockets - comunicação de duas vias
   - notificações integradas e/ou por emails
   - versão paga com período de testes
-  - deployment automatico
-  - Docs da API (opcional)
-  - preferencias do usuário (opcional)
-  - upload de arquivos direto na cloud (opcional)
+  - cache
 
 Perfil 2 - balanceado
 
 José quer adquirir as habilidades de forma balanceada, sabendo um pouco de tudo
 
-- entendimento ~~~~
-- estudo dos fundamentos
+- entendimento básico de todas tecnologias WEB
 
+- estudo dos fundamentos
   - algoritmos e estruturas de dados
   - bancos de dados
   - organização e arquitetura de computadores
@@ -37,12 +36,18 @@ José quer adquirir as habilidades de forma balanceada, sabendo um pouco de tudo
   - compiladores
   - https://gist.github.com/sibelius/35eb01209c61ecaa76fc3f28d2f73467
 
+- implementar um visualizador de algoritmos e estruturas de dados
+
 - implementar o software Conduit (real world) do zero
 
   - usando ReactJS
   - criar o backend usando um framework leve como: Slim, Flask
   - responsivo
   - testes automatizados
+  - deployment automatico
+  - Docs da API
+  - preferencias do usuário
+  - upload de arquivos direto na cloud
 
 - web scrapping
 - datatables, date/range picker, telephone picker, fullcalendar
