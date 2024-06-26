@@ -14,3 +14,7 @@ colocar dica de testar um document.querySelectorAll direto pelo Console do DevTo
 
 Sugestões de material sobre mysql
 https://community.revelo.com.br/como-conectar-o-node-js-com-o-mysql/
+
+metadescrição do site
+
+eliminar links da fonte da letra e do bootstrap

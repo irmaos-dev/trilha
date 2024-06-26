@@ -1,0 +1,13 @@
+Django + React
+
+- atualizar a página desconecta o usuário
+- foto de perfil não aparece no canto
+- clicar 2x em botão não pode enviar requisição 2x
+- erros da API devem conter descrição do erro
+- frontend deve exibir um alerta de erros
+- mobile: alterar o posicionamento das tags para melhorar a responsividade
+- alterar o ícone de deletar artigo para uma lixeira
+- ao editar um artigo, a lista de tags não é exibida no campo
+- não aparece nenhuma popular tags
+- colocar uma imagem padrão para usuários sem foto de perfil
+- página do perfil do autor não abre

@@ -72,6 +72,7 @@ Luis quer ser um expert, implementar e saber profundamente de tudo
   - Flutter
   - Swift
   - Kotlin
+  - Delphi
   - mais 30 outros frameworks frontend
   - C#
   - Java
@@ -112,3 +113,6 @@ Luis quer ser um expert, implementar e saber profundamente de tudo
   - Zig
   - Haskell
   - Clojure
+  - Lua
+  - Assembly
+
